@@ -17,7 +17,7 @@ Terminal Technology Department, Alipay, Ant Group.
 
 <div align='center'>
     <a href='https://badtobest.github.io/echomimic.html'><img src='https://img.shields.io/badge/Project-Page-blue'></a>
-    <a href='assets/echomimic.jpg'><img src='https://badges.aleen42.com/src/wechat.svg'></a>
+    <a href='assets/echomimic.png'><img src='https://badges.aleen42.com/src/wechat.svg'></a>
 </div>
 
 ## Gallery
