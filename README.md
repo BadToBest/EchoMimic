@@ -113,7 +113,7 @@ Terminal Technology Department, Alipay, Ant Group.
 
 </table>
 
-*** （Some demo images above are sourced from image websites. If there is any infringement, we will immediately remove them and apologize.）***
+**（Some demo images above are sourced from image websites. If there is any infringement, we will immediately remove them and apologize.）**
 
 ## Release Plans
 
