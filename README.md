@@ -17,7 +17,9 @@ Terminal Technology Department, Alipay, Ant Group.
 
 <div align='center'>
     <a href='https://badtobest.github.io/echomimic.html'><img src='https://img.shields.io/badge/Project-Page-blue'></a>
+    <a href='https://huggingface.co/BadToBest/EchoMimic'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Model-yellow'></a>
     <a href='assets/echomimic.png'><img src='https://badges.aleen42.com/src/wechat.svg'></a>
+    <a href=''><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 </div>
 
 ## Gallery
@@ -120,3 +122,26 @@ Terminal Technology Department, Alipay, Ant Group.
 |     🚀     | Pretrained models with better pose control to be released                | TBD |
 |     🚀     | Pretrained models with better sing performance to be released            | TBD |
 |    🚀    | Large-Scale and High-resolution Chinese-Based Talking Head Dataset       |    TBD     |
+
+## Acknowledgements
+
+We would like to thank the contributors to the [AnimateDiff](https://github.com/guoyww/AnimateDiff), [Moore-AnimateAnyone](https://github.com/MooreThreads/Moore-AnimateAnyone) and [MuseTalk](https://github.com/TMElyralab/MuseTalk) repositories, for their open research and exploration. 
+
+We are also grateful to [V-Express](https://github.com/tencent-ailab/V-Express) and [hallo](https://github.com/fudan-generative-vision/hallo) for their outstanding work in the area of diffusion-based talking heads.
+
+If we missed any open-source projects or related articles, we would like to complement the acknowledgement of this specific work immediately.
+
+## Citation
+
+If you find our work useful for your research, please consider citing the paper:
+
+```
+@misc{chen2024echomimic,
+  title={EchoMimic: Lifelike Audio-Driven Portrait Animations through Editable Landmark Conditioning},
+  author={Zhiyuan Chen, Jiajiong Cao, Zhiquan Chen, Yuming Li, Chenguang Ma},
+  year={2024},
+  eprint={2406.01900},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV}
+}
+```
