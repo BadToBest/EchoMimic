@@ -1,6 +1,5 @@
 import os
 from .whisper import load_model
-import soundfile as sf
 import numpy as np
 import time
 import sys

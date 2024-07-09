@@ -12,27 +12,19 @@ import os
 import random
 from datetime import datetime
 from pathlib import Path
-from typing import List
 
-import av
 import cv2
 import numpy as np
 import torch
-import torchvision
 from diffusers import AutoencoderKL, DDIMScheduler
-from diffusers.pipelines.stable_diffusion import StableDiffusionPipeline
-from einops import repeat
 from omegaconf import OmegaConf
 from PIL import Image
-from torchvision import transforms
-from transformers import CLIPVisionModelWithProjection
 
 from src.models.unet_2d_condition import UNet2DConditionModel
 from src.models.unet_3d_echo import EchoUNet3DConditionModel
 from src.models.whisper.audio2feature import load_audio_model
 from src.pipelines.pipeline_echo_mimic import Audio2VideoPipeline
-from src.utils.util import get_fps, read_frames, save_videos_grid, crop_and_pad
-import sys
+from src.utils.util import save_videos_grid, crop_and_pad
 from src.models.face_locator import FaceLocator
 from moviepy.editor import VideoFileClip, AudioFileClip
 from facenet_pytorch import MTCNN
