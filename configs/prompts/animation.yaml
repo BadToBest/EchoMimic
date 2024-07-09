@@ -1,0 +1,27 @@
+## dependency models
+pretrained_base_model_path: "./pretrained_weights/sd-image-variations-diffusers/"
+pretrained_vae_path: "./pretrained_weights/sd-vae-ft-mse/"
+audio_model_path: "./pretrained_weights/audio_processor/whisper_tiny.pt"
+
+## echo mimic checkpoint
+denoising_unet_path: "./pretrained_weights/denoising_unet.pth"
+reference_unet_path: "./pretrained_weights/reference_unet.pth"
+face_locator_path: "./pretrained_weights/face_locator.pth"
+motion_module_path: "./pretrained_weights/motion_module.pth"
+
+## deonise model configs
+inference_config: "./configs/inference/inference_v2.yaml"
+weight_dtype: 'fp16'
+
+## test cases
+test_cases:
+  "./assets/test_imgs/a.png":
+    - "./assets/test_audios/echomimic_en.wav"
+  "./assets/test_imgs/b.png":
+    - "./assets/test_audios/echomimic_en_girl.wav"
+  "./assets/test_imgs/c.png":
+    - "./assets/test_audios/echomimic_en_girl.wav"
+  "./assets/test_imgs/d.png":
+    - "./assets/test_audios/echomimic_en_girl.wav"
+  "./assets/test_imgs/e.png":
+    - "./assets/test_audios/echomimic_en.wav"

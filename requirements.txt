@@ -1,0 +1,10 @@
+torch>=2.0.1
+torchvision>=0.15.2
+torchaudio>=2.0.2
+torchmetrics
+torchtyping
+tqdm
+diffusers>=0.24.0
+ffmpeg-python==0.2.0
+facenet_pytorch==2.5.0
+moviepy==1.0.3
