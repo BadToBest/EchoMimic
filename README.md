@@ -204,9 +204,9 @@ The run the python inference script:
 |:--------:|:-------------------------------------------------------------------------|:--:|
 |    🚀    | The inference source code of the Audio-Driven algo meet everyone on GitHub   | 9th July, 2024 |
 |    🚀    | Pretrained models trained on English and Mandarin Chinese to be released | 9th July, 2024 |
-|    🚀     | The inference source code of the Pose-Driven algo meet everyone on GitHub   | TBD |
-|     🚀     | Pretrained models with better pose control to be released                | TBD |
-|     🚀     | Pretrained models with better sing performance to be released            | TBD |
+|    🚀    | The inference source code of the Pose-Driven algo meet everyone on GitHub   | 13th July, 2024 |
+|    🚀    | Pretrained models with better pose control to be released                | 13th July, 2024 |
+|    🚀    | Pretrained models with better sing performance to be released            | TBD |
 |    🚀    | Large-Scale and High-resolution Chinese-Based Talking Head Dataset       | TBD |
 
 ## Acknowledgements
