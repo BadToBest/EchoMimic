@@ -115,15 +115,98 @@ Terminal Technology Department, Alipay, Ant Group.
 
 **（Some demo images above are sourced from image websites. If there is any infringement, we will immediately remove them and apologize.）**
 
+## Installation
+
+### Download Codes
+
+```bash
+  git clone https://github.com/BadToBest/EchoMimic
+  cd EchoMimic
+```
+
+### Python Environment Setup
+
+- Tested System Environment: Centos 7.2/Ubuntu 22.04, Cuda >= 11.7
+- Tested GPUs: A100(80G) / RTX4090D (24G) / V100(16G)
+- Tested Python Version: 3.8 / 3.10 / 3.11
+
+Create conda environment (Recommended):
+
+```bash
+  conda create -n echomimic python=3.8
+  conda activate echomimic
+```
+
+Install packages with `pip`
+```bash
+  pip install -r requirements.txt
+```
+
+### Download ffmpeg-static
+Download and decompress [ffmpeg-static]("https://www.johnvansickle.com/ffmpeg/old-releases/ffmpeg-4.4-amd64-static.tar.xz"), then
+```
+export FFMPEG_PATH=/path/to/ffmpeg-4.4-amd64-static
+```
+
+### Download pretrained weights
+
+```shell
+git lfs install
+git clone https://huggingface.co/BadToBest/EchoMimic pretrained_weights
+```
+
+The pretrained_weights is organized as follows.
+
+```
+./pretrained_weights/
+├── denoising_unet.pth
+├── reference_unet.pth
+├── motion_module.pth
+├── face_locator.pth
+├── sd-vae-ft-mse
+│   └── ...
+├── sd-image-variations-diffusers
+│   └── ...
+└── audio_processor
+    └── whisper_tiny.pt
+```
+
+**denoising_unet.pth** / **reference_unet.pth** / **motion_module.pth** / **face_locator.pth** are the main checkpoints of **EchoMimic**. Other models in this hub can be also downloaded from it's original hub, thanks to their brilliant works:
+- [sd-vae-ft-mse](https://huggingface.co/stabilityai/sd-vae-ft-mse): 
+- [sd-image-variations-diffusers](https://huggingface.co/lambdalabs/sd-image-variations-diffusers)
+- [audio_processor(whisper)](https://openaipublic.azureedge.net/main/whisper/models/65147644a518d12f04e32d6f3b26facc3f8dd46e5390956a9424a650c0ce22b9/tiny.pt)
+
+### Inference 
+Run the python inference script:
+
+```bash
+  python -u infer_audio2vid.py
+```
+
+### Inference On Your Own Cases 
+
+Edit the inference config file **./configs/prompts/animation.yaml**, and add your own case:
+
+```bash
+test_cases:
+  "path/to/your/image":
+    - "path/to/your/audio"
+```
+
+The run the python inference script:
+```bash
+  python -u infer_audio2vid.py
+```
+
 ## Release Plans
 
-|  Status  | Milestone                                                                |    ETA     |
-|:--------:|:-------------------------------------------------------------------------|:----------:|
-|    🚀    | Inference source code meet everyone on GitHub                            | TBD |
-|    🚀    | Pretrained models trained on English and Mandarin Chinese to be released | TBD |
+|  Status  | Milestone                                                                | ETA |
+|:--------:|:-------------------------------------------------------------------------|:--:|
+|    🚀    | Inference source code meet everyone on GitHub                            | 9th July, 2024 |
+|    🚀    | Pretrained models trained on English and Mandarin Chinese to be released | 9th July, 2024 |
 |     🚀     | Pretrained models with better pose control to be released                | TBD |
 |     🚀     | Pretrained models with better sing performance to be released            | TBD |
-|    🚀    | Large-Scale and High-resolution Chinese-Based Talking Head Dataset       |    TBD     |
+|    🚀    | Large-Scale and High-resolution Chinese-Based Talking Head Dataset       | TBD |
 
 ## Acknowledgements
 
