@@ -62,6 +62,8 @@ def parse_args():
 def select_face(det_bboxes, probs):
     ## max face from faces that the prob is above 0.8
     ## box: xyxy
+    if det_bboxes is None or probs is None:
+        return None
     filtered_bboxes = []
     for bbox_i in range(len(det_bboxes)):
         if probs[bbox_i] > 0.8:
