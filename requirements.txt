@@ -13,3 +13,4 @@ einops==0.4.1
 omegaconf==2.3.0
 opencv-python
 av==11.0.0
+gradio
