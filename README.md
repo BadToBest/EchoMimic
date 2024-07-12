@@ -202,11 +202,12 @@ The run the python inference script:
 
 |  Status  | Milestone                                                                | ETA |
 |:--------:|:-------------------------------------------------------------------------|:--:|
-|    🚀    | The inference source code of the Audio-Driven algo meet everyone on GitHub   | 9th July, 2024 |
-|    🚀    | Pretrained models trained on English and Mandarin Chinese to be released | 9th July, 2024 |
+|    ✅    | The inference source code of the Audio-Driven algo meet everyone on GitHub   | 9th July, 2024 |
+|    ✅    | Pretrained models trained on English and Mandarin Chinese to be released | 9th July, 2024 |
 |    🚀    | The inference source code of the Pose-Driven algo meet everyone on GitHub   | 13th July, 2024 |
 |    🚀    | Pretrained models with better pose control to be released                | 13th July, 2024 |
 |    🚀    | Pretrained models with better sing performance to be released            | TBD |
+|    🚀    | Accelerated models to be released                                        | TBD |
 |    🚀    | Large-Scale and High-resolution Chinese-Based Talking Head Dataset       | TBD |
 
 ## Acknowledgements
@@ -216,6 +217,12 @@ We would like to thank the contributors to the [AnimateDiff](https://github.com/
 We are also grateful to [V-Express](https://github.com/tencent-ailab/V-Express) and [hallo](https://github.com/fudan-generative-vision/hallo) for their outstanding work in the area of diffusion-based talking heads.
 
 If we missed any open-source projects or related articles, we would like to complement the acknowledgement of this specific work immediately.
+
+## Echomimic Communities
+
+There are numerous developers actively engaged in projects centered around EchoMimic, and we are compelled to express our profound gratitude for their invaluable contributions. In acknowledgment of their efforts, we are pleased to highlight a selection of exemplary repositories below. These repositories have significantly augmented the capabilities of EchoMimic, thereby enhancing its potency and versatility in application.
+
+ComfyUi version: https://github.com/greengerong/EchoMimic
 
 ## Citation
 
