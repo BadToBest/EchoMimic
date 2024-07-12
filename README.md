@@ -18,9 +18,24 @@ Terminal Technology Department, Alipay, Ant Group.
 <div align='center'>
     <a href='https://badtobest.github.io/echomimic.html'><img src='https://img.shields.io/badge/Project-Page-blue'></a>
     <a href='https://huggingface.co/BadToBest/EchoMimic'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Model-yellow'></a>
-    <a href=''><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
+    <a href='https://arxiv.org/abs/2407.08136'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
     <a href='assets/echomimic.png'><img src='https://badges.aleen42.com/src/wechat.svg'></a>
 </div>
+
+## &#x1F4E3; &#x1F4E3; Updates
+### 24.07.12 
+#### (1) Gradio or Webui version
+There are numerous developers actively engaged in projects centered around EchoMimic, and we are compelled to express our profound gratitude for their invaluable contributions. In acknowledgment of their efforts, we are pleased to highlight a selection of exemplary repositories below. These repositories have significantly augmented the capabilities of EchoMimic, thereby enhancing its potency and versatility in application.
+
+WebUi version from @greengerong : https://github.com/greengerong/EchoMimic
+
+Gradio UI commit from @Robin021 : https://github.com/BadToBest/EchoMimic/blob/main/webgui.py
+
+Code contribution in issue from @O-O1024 : https://github.com/BadToBest/EchoMimic/issues/22
+
+#### (2) Our Paper is Released!
+
+Arxiv link:https://arxiv.org/abs/2407.08136
 
 ## Gallery
 ### Audio Driven (Sing)
@@ -181,6 +196,7 @@ Run the python inference script:
 
 ```bash
   python -u infer_audio2vid.py
+  python -u infer_audio2vid_pose.py
 ```
 
 ### Audio-Drived Algo Inference On Your Own Cases 
@@ -198,14 +214,24 @@ The run the python inference script:
   python -u infer_audio2vid.py
 ```
 
+### Run the Gradio UI
+
+Thanks to the contribution from @greengerong:
+
+```bash
+
+python @Robin021 --server_port=3000
+
+```
+
 ## Release Plans
 
 |  Status  | Milestone                                                                | ETA |
 |:--------:|:-------------------------------------------------------------------------|:--:|
 |    ✅    | The inference source code of the Audio-Driven algo meet everyone on GitHub   | 9th July, 2024 |
 |    ✅    | Pretrained models trained on English and Mandarin Chinese to be released | 9th July, 2024 |
-|    🚀    | The inference source code of the Pose-Driven algo meet everyone on GitHub   | 13th July, 2024 |
-|    🚀    | Pretrained models with better pose control to be released                | 13th July, 2024 |
+|    🚀    | The inference source code of the Pose-Driven algo meet everyone on GitHub   | 15th July, 2024 |
+|    ✅    | Pretrained models with better pose control to be released                | 13th July, 2024 |
 |    🚀    | Pretrained models with better sing performance to be released            | TBD |
 |    🚀    | Accelerated models to be released                                        | TBD |
 |    🚀    | Large-Scale and High-resolution Chinese-Based Talking Head Dataset       | TBD |
@@ -217,12 +243,6 @@ We would like to thank the contributors to the [AnimateDiff](https://github.com/
 We are also grateful to [V-Express](https://github.com/tencent-ailab/V-Express) and [hallo](https://github.com/fudan-generative-vision/hallo) for their outstanding work in the area of diffusion-based talking heads.
 
 If we missed any open-source projects or related articles, we would like to complement the acknowledgement of this specific work immediately.
-
-## EchoMimic Communities
-
-There are numerous developers actively engaged in projects centered around EchoMimic, and we are compelled to express our profound gratitude for their invaluable contributions. In acknowledgment of their efforts, we are pleased to highlight a selection of exemplary repositories below. These repositories have significantly augmented the capabilities of EchoMimic, thereby enhancing its potency and versatility in application.
-
-WebUi version: https://github.com/greengerong/EchoMimic
 
 ## Citation
 
