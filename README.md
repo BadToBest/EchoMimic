@@ -218,11 +218,11 @@ We are also grateful to [V-Express](https://github.com/tencent-ailab/V-Express) 
 
 If we missed any open-source projects or related articles, we would like to complement the acknowledgement of this specific work immediately.
 
-## Echomimic Communities
+## EchoMimic Communities
 
 There are numerous developers actively engaged in projects centered around EchoMimic, and we are compelled to express our profound gratitude for their invaluable contributions. In acknowledgment of their efforts, we are pleased to highlight a selection of exemplary repositories below. These repositories have significantly augmented the capabilities of EchoMimic, thereby enhancing its potency and versatility in application.
 
-ComfyUi version: https://github.com/greengerong/EchoMimic
+WebUi version: https://github.com/greengerong/EchoMimic
 
 ## Citation
 
