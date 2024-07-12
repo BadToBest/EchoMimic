@@ -246,7 +246,7 @@ If we missed any open-source projects or related articles, we would like to comp
 
 ## Citation
 
-If you find our work useful for your research, please consider citing the paper:
+If you find our work useful for your research, please consider citing the paper :
 
 ```
 @misc{chen2024echomimic,
