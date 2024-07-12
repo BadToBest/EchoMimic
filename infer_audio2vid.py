@@ -10,6 +10,8 @@ import argparse
 import os
 
 import random
+import platform
+import subprocess
 from datetime import datetime
 from pathlib import Path
 
@@ -30,10 +32,20 @@ from moviepy.editor import VideoFileClip, AudioFileClip
 from facenet_pytorch import MTCNN
 
 ffmpeg_path = os.getenv('FFMPEG_PATH')
-if ffmpeg_path is None:
-    print("please download ffmpeg-static and export to FFMPEG_PATH. \nFor example: export FFMPEG_PATH=/musetalk/ffmpeg-4.4-amd64-static")
-elif ffmpeg_path not in os.getenv('PATH'):
-    print("add ffmpeg to path")
+if ffmpeg_path is None and platform.system() in ['Linux', 'Darwin']:
+    try:
+        result = subprocess.run(['which', 'ffmpeg'], capture_output=True, text=True)
+        if result.returncode == 0:
+            ffmpeg_path = result.stdout.strip()
+            print(f"FFmpeg is installed at: {ffmpeg_path}")
+        else:
+            print("FFmpeg is not installed. Please download ffmpeg-static and export to FFMPEG_PATH.")
+            print("For example: export FFMPEG_PATH=/musetalk/ffmpeg-4.4-amd64-static")
+    except Exception as e:
+        pass
+
+if ffmpeg_path is not None and ffmpeg_path not in os.getenv('PATH'):
+    print("Adding FFMPEG_PATH to PATH")
     os.environ["PATH"] = f"{ffmpeg_path}:{os.environ['PATH']}"
 
 def parse_args():
