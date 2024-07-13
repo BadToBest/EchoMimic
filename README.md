@@ -24,9 +24,13 @@ Terminal Technology Department, Alipay, Ant Group.
 
 ## &#x1F4E3; &#x1F4E3; Updates
 ### 24.07.13
+#### Pose Driven Released
 
 Codes and Models on pose-driven algo was released !!!
 
+#### [Video Installation Tutorial](https://www.youtube.com/watch?v=8R0lTIY7tfI) from @oisilener1982
+
+Thanks for the contribution from @oisilener1982 !!! 
 ### 24.07.12 
 #### (1) Gradio or Webui version
 There are numerous developers actively engaged in projects centered around EchoMimic, and we are compelled to express our profound gratitude for their invaluable contributions. In acknowledgment of their efforts, we are pleased to highlight a selection of exemplary repositories below. These repositories have significantly augmented the capabilities of EchoMimic, thereby enhancing its potency and versatility in application.
