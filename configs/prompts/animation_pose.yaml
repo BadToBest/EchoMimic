@@ -1,0 +1,21 @@
+## dependency models
+pretrained_base_model_path: "./pretrained_weights/sd-image-variations-diffusers"
+pretrained_vae_path: "./pretrained_weights/sd-vae-ft-mse"
+audio_model_path: "./pretrained_weights/audio_processor/whisper_tiny.pt"
+
+## echo mimic checkpoint
+denoising_unet_path: "./pretrained_weights/denoising_unet_pose.pth"
+reference_unet_path: "./pretrained_weights/reference_unet_pose.pth"
+face_locator_path: "./pretrained_weights/face_locator_pose.pth"
+motion_module_path: "./pretrained_weights/motion_module_pose.pth"
+
+## deonise model configs
+inference_config: "./configs/inference/inference_v2.yaml"
+weight_dtype: 'fp16'
+
+## test cases
+test_cases:
+  "./assets/test_pose_demo/d.jpg":
+    - "./assets/test_pose_demo_audios/movie_0_clip_0.wav"
+    - "./assets/test_pose_demo_pose"
+    

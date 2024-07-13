@@ -23,6 +23,10 @@ Terminal Technology Department, Alipay, Ant Group.
 </div>
 
 ## &#x1F4E3; &#x1F4E3; Updates
+### 24.07.13
+
+Codes and Models on pose-driven algo was released !!!
+
 ### 24.07.12 
 #### (1) Gradio or Webui version
 There are numerous developers actively engaged in projects centered around EchoMimic, and we are compelled to express our profound gratitude for their invaluable contributions. In acknowledgment of their efforts, we are pleased to highlight a selection of exemplary repositories below. These repositories have significantly augmented the capabilities of EchoMimic, thereby enhancing its potency and versatility in application.
@@ -214,13 +218,32 @@ The run the python inference script:
   python -u infer_audio2vid.py
 ```
 
+### Motion Alignment between Ref. Img. and Driven Vid.
+(Firstly download the checkpoints with '_pose.pth' postfix from huggingface)
+Edit driver_video and ref_image to your path in demo_motion_sync.py, then run
+```bash
+  python -u demo_motion_sync.py
+```
+
+### Audio&Pose-Drived Algo Inference
+Edit ./configs/prompts/animation_pose.yaml, then run
+```bash
+  python -u infer_audio2vid_pose.py
+```
+
+### Pose-Drived Algo Inference
+Set draw_mouse=True in line 135 of infer_audio2vid_pose.py. Edit ./configs/prompts/animation_pose.yaml, then run
+```bash
+  python -u infer_audio2vid_pose.py
+```
+
 ### Run the Gradio UI
 
-Thanks to the contribution from @greengerong:
+Thanks to the contribution from @Robin021:
 
 ```bash
 
-python @Robin021 --server_port=3000
+python -u webgui.py --server_port=3000
 
 ```
 
@@ -230,7 +253,7 @@ python @Robin021 --server_port=3000
 |:--------:|:-------------------------------------------------------------------------|:--:|
 |    ✅    | The inference source code of the Audio-Driven algo meet everyone on GitHub   | 9th July, 2024 |
 |    ✅    | Pretrained models trained on English and Mandarin Chinese to be released | 9th July, 2024 |
-|    🚀    | The inference source code of the Pose-Driven algo meet everyone on GitHub   | 15th July, 2024 |
+|    ✅    | The inference source code of the Pose-Driven algo meet everyone on GitHub   | 13th July, 2024 |
 |    ✅    | Pretrained models with better pose control to be released                | 13th July, 2024 |
 |    🚀    | Pretrained models with better sing performance to be released            | TBD |
 |    🚀    | Accelerated models to be released                                        | TBD |
