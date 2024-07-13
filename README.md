@@ -30,7 +30,7 @@ Codes and Models on pose-driven algo was released !!!
 
 #### [Video Installation Tutorial](https://www.youtube.com/watch?v=8R0lTIY7tfI) from the Community
 
-Thanks for the video tutorial maker and introduction from @oisilener1982 !!! https://github.com/BadToBest/EchoMimic/issues/31
+Thanks for the maker of video tutorial and @oisilener1982 who introduces it !! https://github.com/BadToBest/EchoMimic/issues/31
 
 ### 24.07.12 
 #### (1) Gradio or Webui version
