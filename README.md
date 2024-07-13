@@ -219,7 +219,9 @@ The run the python inference script:
 ```
 
 ### Motion Alignment between Ref. Img. and Driven Vid.
+
 (Firstly download the checkpoints with '_pose.pth' postfix from huggingface)
+
 Edit driver_video and ref_image to your path in demo_motion_sync.py, then run
 ```bash
   python -u demo_motion_sync.py
