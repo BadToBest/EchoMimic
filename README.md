@@ -23,6 +23,11 @@ Terminal Technology Department, Alipay, Ant Group.
 </div>
 
 ## &#x1F4E3; &#x1F4E3; Updates
+### 24.07.14
+#### ComfyUI Version
+
+ComfyUI version EchoMimic was provided by @smthemex at https://github.com/smthemex/ComfyUI_EchoMimic , Thanks for his contribution !!!
+
 ### 24.07.13
 #### Pose Driven Released
 
