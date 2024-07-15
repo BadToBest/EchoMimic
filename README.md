@@ -23,33 +23,17 @@ Terminal Technology Department, Alipay, Ant Group.
 </div>
 
 ## &#x1F4E3; &#x1F4E3; Updates
-### 24.07.14
-#### ComfyUI Version
+* [2024.07.14] 🔥 [ComfyUI](https://github.com/smthemex/ComfyUI_EchoMimic) is now available. Thanks @smthemex for the contribution. 
 
-ComfyUI version EchoMimic was provided by @smthemex at https://github.com/smthemex/ComfyUI_EchoMimic , Thanks for his contribution !!!
+* [2024.07.13] 🔥 Thanks [NewGenAI](https://www.youtube.com/@StableAIHub) for the [video installation tutorial](https://www.youtube.com/watch?v=8R0lTIY7tfI).
 
-### 24.07.13
-#### Pose Driven Released
+* [2024.07.13] 🔥 We release our pose&audio driven codes and models.
 
-Codes and Models on pose-driven algo was released !!!
+* [2024.07.12] 🔥 WebUI and GradioUI versions are released. We thank @greengerong @Robin021 and @O-O1024 for their contributions.
 
-#### [Video Installation Tutorial](https://www.youtube.com/watch?v=8R0lTIY7tfI) from the Community
+* [2024.07.12] 🔥 Our [paper](https://arxiv.org/abs/2407.08136) is in public on arxiv.
 
-Thanks for [NewGenAI](https://www.youtube.com/@StableAIHub) who is the maker of video tutorial and @oisilener1982 who introduces it !! https://github.com/BadToBest/EchoMimic/issues/31
-
-### 24.07.12 
-#### (1) Gradio or Webui version
-There are numerous developers actively engaged in projects centered around EchoMimic, and we are compelled to express our profound gratitude for their invaluable contributions. In acknowledgment of their efforts, we are pleased to highlight a selection of exemplary repositories below. These repositories have significantly augmented the capabilities of EchoMimic, thereby enhancing its potency and versatility in application.
-
-WebUi version from @greengerong : https://github.com/greengerong/EchoMimic
-
-Gradio UI commit from @Robin021 : https://github.com/BadToBest/EchoMimic/blob/main/webgui.py
-
-Code contribution in issue from @O-O1024 : https://github.com/BadToBest/EchoMimic/issues/22
-
-#### (2) Our Paper is Released!
-
-Arxiv link:https://arxiv.org/abs/2407.08136
+* [2024.07.09] 🔥 We release our audio driven codes and models.
 
 ## Gallery
 ### Audio Driven (Sing)
