@@ -24,15 +24,10 @@ Terminal Technology Department, Alipay, Ant Group.
 
 ## &#x1F4E3; &#x1F4E3; Updates
 * [2024.07.14] 🔥 [ComfyUI](https://github.com/smthemex/ComfyUI_EchoMimic) is now available. Thanks @smthemex for the contribution. 
-
 * [2024.07.13] 🔥 Thanks [NewGenAI](https://www.youtube.com/@StableAIHub) for the [video installation tutorial](https://www.youtube.com/watch?v=8R0lTIY7tfI).
-
 * [2024.07.13] 🔥 We release our pose&audio driven codes and models.
-
 * [2024.07.12] 🔥 WebUI and GradioUI versions are released. We thank @greengerong @Robin021 and @O-O1024 for their contributions.
-
 * [2024.07.12] 🔥 Our [paper](https://arxiv.org/abs/2407.08136) is in public on arxiv.
-
 * [2024.07.09] 🔥 We release our audio driven codes and models.
 
 ## Gallery
@@ -251,8 +246,8 @@ python -u webgui.py --server_port=3000
 |    ✅    | Pretrained models trained on English and Mandarin Chinese to be released | 9th July, 2024 |
 |    ✅    | The inference source code of the Pose-Driven algo meet everyone on GitHub   | 13th July, 2024 |
 |    ✅    | Pretrained models with better pose control to be released                | 13th July, 2024 |
-|    🚀    | Pretrained models with better sing performance to be released            | TBD |
 |    🚀    | Accelerated models to be released                                        | TBD |
+|    🚀    | Pretrained models with better sing performance to be released            | TBD |
 |    🚀    | Large-Scale and High-resolution Chinese-Based Talking Head Dataset       | TBD |
 
 ## Acknowledgements
