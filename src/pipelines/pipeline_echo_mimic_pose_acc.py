@@ -25,6 +25,7 @@ from transformers import CLIPImageProcessor
 from src.models.mutual_self_attention import ReferenceAttentionControl
 from src.pipelines.context import get_context_scheduler
 from src.pipelines.utils import get_tensor_interpolation_method
+from src.utils.step_func import origin_by_velocity_and_sample, psuedo_velocity_wrt_noisy_and_timestep, get_alpha
 
 
 @dataclass
@@ -510,7 +511,7 @@ class AudioPose2VideoPipeline(DiffusionPipeline):
                         encoder_hidden_states=None,
                         return_dict=False,
                     )
-                    reference_control_reader.update(reference_control_writer, do_classifier_free_guidance=True)
+                    reference_control_reader.update(reference_control_writer, do_classifier_free_guidance=do_classifier_free_guidance)
 
 
                 num_context_batches = math.ceil(len(context_queue) / context_batch_size)
@@ -540,8 +541,7 @@ class AudioPose2VideoPipeline(DiffusionPipeline):
                     audio_latents_cond = torch.cat([audio_fea_final[:, c] for c in new_context]).to(device)
                     audio_latents = torch.cat([torch.zeros_like(audio_latents_cond), audio_latents_cond], 0)
                     pose_latents_cond = torch.cat([face_locator_tensor[:, :, c] for c in new_context]).to(device)
-                    zero_pose_latents = torch.cat([zero_locator_tensor[:, :, c] for c in new_context]).to(device)
-                    pose_latents = torch.cat([torch.zeros_like(zero_pose_latents), pose_latents_cond], 0)
+                    pose_latents = torch.cat([torch.zeros_like(pose_latents_cond), pose_latents_cond], 0)
 
                     latent_model_input = self.scheduler.scale_model_input(
                         latent_model_input, t
@@ -556,6 +556,10 @@ class AudioPose2VideoPipeline(DiffusionPipeline):
                         return_dict=False,
                     )[0]
 
+                    alphas_cumprod = self.scheduler.alphas_cumprod.to(latent_model_input.device)
+                    x_pred = origin_by_velocity_and_sample(pred, latent_model_input, alphas_cumprod, t)
+                    pred = psuedo_velocity_wrt_noisy_and_timestep(latent_model_input, x_pred, alphas_cumprod, t, torch.ones_like(t) * (-1))
+
                     for j, c in enumerate(new_context):
                         noise_pred[:, :, c] = noise_pred[:, :, c] + pred
                         counter[:, :, c] = counter[:, :, c] + 1
@@ -566,6 +570,8 @@ class AudioPose2VideoPipeline(DiffusionPipeline):
                     noise_pred = noise_pred_uncond + guidance_scale * (
                         noise_pred_text - noise_pred_uncond
                     )
+                else:
+                    noise_pred = noise_pred / counter
 
                 latents = self.scheduler.step(
                     noise_pred, t, latents, **extra_step_kwargs

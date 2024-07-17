@@ -21,7 +21,7 @@ from transformers import CLIPVisionModelWithProjection
 from src.models.unet_2d_condition import UNet2DConditionModel
 from src.models.unet_3d_echo import EchoUNet3DConditionModel
 from src.models.whisper.audio2feature import load_audio_model
-from src.pipelines.pipeline_echo_mimic_pose import AudioPose2VideoPipeline
+from src.pipelines.pipeline_echo_mimic_pose_acc import AudioPose2VideoPipeline
 from src.utils.util import get_fps, read_frames, save_videos_grid, crop_and_pad
 import sys
 from src.models.face_locator import FaceLocator
@@ -33,7 +33,7 @@ import pickle
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--config", type=str, default="./configs/prompts/animation_pose.yaml")
+    parser.add_argument("--config", type=str, default="./configs/prompts/animation_pose_acc.yaml")
     parser.add_argument("-W", type=int, default=512)
     parser.add_argument("-H", type=int, default=512)
     parser.add_argument("-L", type=int, default=160)
@@ -44,8 +44,8 @@ def parse_args():
     parser.add_argument("--context_frames", type=int, default=12)
     parser.add_argument("--context_overlap", type=int, default=3)
 
-    parser.add_argument("--cfg", type=float, default=2.5)
-    parser.add_argument("--steps", type=int, default=30)
+    parser.add_argument("--cfg", type=float, default=1.0)
+    parser.add_argument("--steps", type=int, default=6)
     parser.add_argument("--sample_rate", type=int, default=16000)
     parser.add_argument("--fps", type=int, default=24)
     parser.add_argument("--device", type=str, default="cuda")
