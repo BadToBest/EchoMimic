@@ -24,7 +24,7 @@ Terminal Technology Department, Alipay, Ant Group.
 </div>
 
 ## &#x1F4E3; &#x1F4E3; Updates
-* [ BREAKING ] 🔥🔥🔥 Accelerated models and pipe are coming soon. The inference speed can be improved by **10x** (from ~7mins/240frames to ~50s/240frames)
+* [2024.07.17] 🔥🔥🔥 Accelerated models and pipe are released. The inference speed can be improved by **10x** (from ~7mins/240frames to ~50s/240frames)
 * [2024.07.14] 🔥 [ComfyUI](https://github.com/smthemex/ComfyUI_EchoMimic) is now available. Thanks @smthemex for the contribution. 
 * [2024.07.13] 🔥 Thanks [NewGenAI](https://www.youtube.com/@StableAIHub) for the [video installation tutorial](https://www.youtube.com/watch?v=8R0lTIY7tfI).
 * [2024.07.13] 🔥 We release our pose&audio driven codes and models.
