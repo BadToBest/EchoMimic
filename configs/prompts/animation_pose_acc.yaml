@@ -1,23 +1,13 @@
 ## dependency models
-# pretrained_base_model_path: "./pretrained_weights/sd-image-variations-diffusers"
-# pretrained_vae_path: "./pretrained_weights/sd-vae-ft-mse"
-# audio_model_path: "./pretrained_weights/audio_processor/whisper_tiny.pt"
-
-pretrained_base_model_path: "/mnt/juzhen.czy/model_weights/animate_anyone/sd-image-variations-diffusers"
-pretrained_vae_path: "/mnt/juzhen.czy/model_weights/animate_anyone/sd-vae-ft-mse"
-audio_model_path: "/nas2/juzhen.czy/musetalk_weight/whisper/tiny.pt"
-# image_encoder_path: "/mnt/juzhen.czy/model_weights/animate_anyone/sd-image-variations-diffusers/image_encoder"
+pretrained_base_model_path: "./pretrained_weights/sd-image-variations-diffusers"
+pretrained_vae_path: "./pretrained_weights/sd-vae-ft-mse"
+audio_model_path: "./pretrained_weights/audio_processor/whisper_tiny.pt"
 
 ## echo mimic checkpoint
-denoising_unet_path: "/nas2/jiajiong.caojiajio/emo_weights/version_512/exp_output_0711/denoising_unet-10400.pth"
-reference_unet_path: "/nas2/jiajiong.caojiajio/emo_weights/version_512/exp_output_0701/stage1_pose_with_mpd/reference_unet-60000.pth"
-face_locator_path: "/nas2/jiajiong.caojiajio/emo_weights/version_512/exp_output_0701/stage1_pose_with_mpd/face_locator-60000.pth"
-motion_module_path: "/nas2/jiajiong.caojiajio/emo_weights/version_512/exp_output_0715/stage2_pose_with_mpd_kd/motion_module-2600.pth"
-
-# denoising_unet_path: "./pretrained_weights/denoising_unet_pose.pth"
-# reference_unet_path: "./pretrained_weights/reference_unet_pose.pth"
-# face_locator_path: "./pretrained_weights/face_locator_pose.pth"
-# motion_module_path: "./pretrained_weights/motion_module_pose.pth"
+denoising_unet_path: "./pretrained_weights/denoising_unet_pose_acc.pth"
+reference_unet_path: "./pretrained_weights/reference_unet_pose.pth"
+face_locator_path: "./pretrained_weights/face_locator_pose.pth"
+motion_module_path: "./pretrained_weights/motion_module_pose_acc.pth"
 
 ## deonise model configs
 inference_config: "./configs/inference/inference_v2.yaml"
