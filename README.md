@@ -18,12 +18,13 @@ Terminal Technology Department, Alipay, Ant Group.
 <div align='center'>
     <a href='https://badtobest.github.io/echomimic.html'><img src='https://img.shields.io/badge/Project-Page-blue'></a>
     <a href='https://huggingface.co/BadToBest/EchoMimic'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Model-yellow'></a>
-    <a href='https://www.modelscope.cn/models/BadToBest/EchoMimic'><img src='https://img.shields.io/badge/ModelScope-Model-purple'></a>
+    <a href='https://www.modelscope.cn/models/BadToBest/EchoMimic'><img src='https://img.shields.io/badge/ModelScope-Model/Demo-purple'></a>
     <a href='https://arxiv.org/abs/2407.08136'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
     <a href='assets/echomimic.png'><img src='https://badges.aleen42.com/src/wechat.svg'></a>
 </div>
 
 ## &#x1F4E3; &#x1F4E3; Updates
+* [2024.07.23] 🔥 EchoMimic gradio demo on [modelscope](https://www.modelscope.cn/studios/BadToBest/BadToBest) is ready.
 * [2024.07.23] 🔥 EchoMimic gradio demo on [huggingface](https://huggingface.co/spaces/fffiloni/EchoMimic) is ready. Thanks Sylvain Filoni@fffiloni.
 * [2024.07.17] 🔥🔥🔥 Accelerated models and pipe are released. The inference speed can be improved by **10x** (from ~7mins/240frames to ~50s/240frames on V100 GPU)
 * [2024.07.14] 🔥 [ComfyUI](https://github.com/smthemex/ComfyUI_EchoMimic) is now available. Thanks @smthemex for the contribution. 
