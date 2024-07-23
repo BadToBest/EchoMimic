@@ -540,8 +540,8 @@ class AudioPose2VideoPipeline(DiffusionPipeline):
                     audio_latents_cond = torch.cat([audio_fea_final[:, c] for c in new_context]).to(device)
                     audio_latents = torch.cat([torch.zeros_like(audio_latents_cond), audio_latents_cond], 0)
                     pose_latents_cond = torch.cat([face_locator_tensor[:, :, c] for c in new_context]).to(device)
-                    zero_pose_latents = torch.cat([zero_locator_tensor[:, :, c] for c in new_context]).to(device)
-                    pose_latents = torch.cat([torch.zeros_like(zero_pose_latents), pose_latents_cond], 0)
+                    # zero_pose_latents = torch.cat([zero_locator_tensor[:, :, c] for c in new_context]).to(device)
+                    pose_latents = torch.cat([torch.zeros_like(pose_latents_cond), pose_latents_cond], 0)
 
                     latent_model_input = self.scheduler.scale_model_input(
                         latent_model_input, t
