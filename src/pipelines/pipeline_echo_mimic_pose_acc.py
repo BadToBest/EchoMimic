@@ -209,13 +209,6 @@ class AudioPose2VideoPipeline(DiffusionPipeline):
             shape, generator=generator, device=device, dtype=dtype
         )
         latents = latents_seg
-        # print(latents.min(), latents.max())
-        # latents = torch.clamp(latents, -1.5, 1.5)
-        # latents_seg = torch.zeros_like(latents_seg)
-        #
-        # latents_all = [latents_seg.clone() for _ in range(video_length // context_frame_length)] + \
-        #               [latents_seg.clone()[:, :, :video_length % context_frame_length, :, :]]
-        # latents = torch.cat(latents_all, 2)
 
         # scale the initial noise by the standard deviation required by the scheduler
         latents = latents * self.scheduler.init_noise_sigma

@@ -34,6 +34,7 @@ from transformers import CLIPImageProcessor
 from src.models.mutual_self_attention import ReferenceAttentionControl
 from src.pipelines.context import get_context_scheduler
 from src.pipelines.utils import get_tensor_interpolation_method
+from src.utils.step_func import origin_by_velocity_and_sample, psuedo_velocity_wrt_noisy_and_timestep, get_alpha
 
 @dataclass
 class Audio2VideoPipelineOutput(BaseOutput):
@@ -513,6 +514,10 @@ class Audio2VideoPipeline(DiffusionPipeline):
                         return_dict=False,
                     )[0]
 
+                    alphas_cumprod = self.scheduler.alphas_cumprod.to(latent_model_input.device)
+                    x_pred = origin_by_velocity_and_sample(pred, latent_model_input, alphas_cumprod, t)
+                    pred = psuedo_velocity_wrt_noisy_and_timestep(latent_model_input, x_pred, alphas_cumprod, t, torch.ones_like(t) * (-1))
+
                     for j, c in enumerate(new_context):
                         noise_pred[:, :, c] = noise_pred[:, :, c] + pred
                         counter[:, :, c] = counter[:, :, c] + 1
@@ -523,6 +528,8 @@ class Audio2VideoPipeline(DiffusionPipeline):
                     noise_pred = noise_pred_uncond + guidance_scale * (
                         noise_pred_text - noise_pred_uncond
                     )
+                else:
+                    noise_pred = noise_pred / counter
 
                 latents = self.scheduler.step(
                     noise_pred, t, latents, **extra_step_kwargs

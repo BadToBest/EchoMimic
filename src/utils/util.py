@@ -162,4 +162,4 @@ def crop_and_pad(image, rect):
     # 裁剪图像
     cropped_image = image[new_y0:new_y1, new_x0:new_x1]
 
-    return cropped_image
+    return cropped_image, (new_x0, new_y0, new_x1, new_y1)
