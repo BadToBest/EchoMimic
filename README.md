@@ -29,7 +29,7 @@ Terminal Technology Department, Alipay, Ant Group.
 * [2024.07.23] 🔥 EchoMimic gradio demo on [huggingface](https://huggingface.co/spaces/fffiloni/EchoMimic) is ready. Thanks Sylvain Filoni@fffiloni.
 * [2024.07.17] 🔥🔥🔥 Accelerated models and pipe on **Audio + Selected Landmarks** are released. The inference speed can be improved by **10x** (from ~7mins/240frames to ~50s/240frames on V100 GPU)
 * [2024.07.14] 🔥 [ComfyUI](https://github.com/smthemex/ComfyUI_EchoMimic) is now available. Thanks @smthemex for the contribution. 
-* [2024.07.13] 🔥 Thanks [NewGenAI](https://www.youtube.com/@StableAIHub) for the [video installation tutorial](https://www.youtube.com/watch?v=8R0lTIY7tfI).
+* [2024.07.13] 🔥 Thanks [NewGenAI](https://www.youtube.com/@StableAIHub) for the [video installation tutorial](https://www.youtube.com/watch?v=WtHdvSSQlWo).
 * [2024.07.13] 🔥 We release our pose&audio driven codes and models.
 * [2024.07.12] 🔥 WebUI and GradioUI versions are released. We thank @greengerong @Robin021 and @O-O1024 for their contributions.
 * [2024.07.12] 🔥 Our [paper](https://arxiv.org/abs/2407.08136) is in public on arxiv.
@@ -240,6 +240,13 @@ Thanks to the contribution from @Robin021:
 ```bash
 
 python -u webgui.py --server_port=3000
+
+```
+
+Gradio UI for audio to video accelerated model
+```bash
+
+python -u webgui_a2v_acc.py --server_port=3000
 
 ```
 
