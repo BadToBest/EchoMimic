@@ -80,13 +80,11 @@ class ReferenceAttentionControl:
                     [1] * batch_size * num_images_per_prompt * 16
                     + [0] * batch_size * num_images_per_prompt * 16
                 )
-                .to(device)
                 .bool()
             )
         else:
             uc_mask = (
                 torch.Tensor([0] * batch_size * num_images_per_prompt * 2)
-                .to(device)
                 .bool()
             )
 
@@ -170,7 +168,6 @@ class ReferenceAttentionControl:
                                     [1] * (hidden_states.shape[0] // 2)
                                     + [0] * (hidden_states.shape[0] // 2)
                                 )
-                                .to(device)
                                 .bool()
                             )
                         hidden_states_c[_uc_mask] = (
