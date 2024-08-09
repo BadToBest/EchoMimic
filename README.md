@@ -129,6 +129,28 @@ Terminal Technology Department, Alipay, Ant Group.
 
 </table>
 
+### Audio Driven after fix the bug in schedule of inference
+
+Left: After fixing the bug; Right: Before fixing the bug;
+Fix the bug will remove the noise of background.
+
+<table class="center">
+    
+<tr>
+    <td width=50% style="border: none">
+        <video controls loop src="https://github.com/user-attachments/assets/66b40f9a-69d9-4dba-853a-cbb7796ee9e2" muted="false"></video>
+    </td>
+    <td width=50% style="border: none">
+        <video controls loop src="https://github.com/user-attachments/assets/49a8c966-1ba9-4178-8650-b7919e266767" muted="false"></video>
+    </td>
+</tr>
+
+</table>
+
+
+
+
+
 **（Some demo images above are sourced from image websites. If there is any infringement, we will immediately remove them and apologize.）**
 
 ## Installation
