@@ -22,7 +22,6 @@ Terminal Technology Department, Alipay, Ant Group.
     <a href='https://www.modelscope.cn/models/BadToBest/EchoMimic'><img src='https://img.shields.io/badge/ModelScope-Model-purple'></a>
     <a href='https://www.modelscope.cn/studios/BadToBest/BadToBest'><img src='https://img.shields.io/badge/ModelScope-Demo-purple'></a>
     <a href='https://arxiv.org/abs/2407.08136'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
-    <a href='assets/echomimic.png'><img src='https://badges.aleen42.com/src/wechat.svg'></a>
 </div>
 
 ## &#x1F4E3; &#x1F4E3; Updates
