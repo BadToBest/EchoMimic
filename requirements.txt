@@ -4,6 +4,7 @@ torchaudio>=2.0.2,<=2.2.2
 mediapipe
 transformers>=4.38.2
 diffusers==0.24.0
+huggingface_hub<0.26.0
 torchmetrics
 torchtyping
 tqdm
