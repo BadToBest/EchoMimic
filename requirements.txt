@@ -7,11 +7,11 @@ diffusers==0.24.0
 torchmetrics
 torchtyping
 tqdm
-ffmpeg-python==0.2.0
-facenet_pytorch==2.5.0
-moviepy==1.0.3
-einops==0.4.1
-omegaconf==2.3.0
+ffmpeg-python>=0.2.0
+facenet_pytorch>=2.5.0
+moviepy>=1.0.3
+einops>=0.4.1
+omegaconf>=2.3.0
 opencv-python
-av==11.0.0
+av>=11.0.0
 gradio
