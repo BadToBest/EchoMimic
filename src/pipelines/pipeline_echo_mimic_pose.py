@@ -457,6 +457,7 @@ class AudioPose2VideoPipeline(DiffusionPipeline):
         )
         
         face_locator_tensor = self.face_locator(face_mask_tensor)
+        zero_locator_tensor = torch.zeros_like(face_locator_tensor)
         
         extra_step_kwargs = self.prepare_extra_step_kwargs(generator, eta)
 
